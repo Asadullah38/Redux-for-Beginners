@@ -1,15 +1,16 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "./App.css";
+import AmountChanger from "./AmountChanger";
+
 const App = () => {
-  const amount=useSelector(state=>state.amount);
+  const amount = useSelector((state) => state.amount);
+
   return (
     <div>
       <h1>Redux First Tutorial Project</h1>
-      <button id="button">+</button>
-      <button id="button">-</button>
+      <AmountChanger/>
       <h1>Your Balance is {amount}</h1>
-      
     </div>
   );
 };
